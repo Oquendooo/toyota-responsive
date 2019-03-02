@@ -1,0 +1,670 @@
+/*Below is a css reset*/
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Above is a css reset*/
+/* Basic CSS grid system is below*/
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 49%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/* Basic CSS grid system is Above*/
+:root {
+  --header-height: 50px;
+  --header-item-color: #fbfefe;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1280px;
+  width: 90%;
+  height: 100%;
+}
+
+/*Section 1 CSS is below*/
+#site-header {
+  background: #2c3c44;
+}
+
+#site-header .site-navbar {
+  background: #2c3c44;
+  height: var(--header-height, 50px);
+}
+
+#site-header .site-navbar .nav-items {
+  list-style-type: none;
+  height: var(--header-height, 50px);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--header-item-color, #fbfefe);
+}
+
+#site-header .site-navbar .nav-items .nav-item {
+  padding-left: 60px;
+}
+
+#site-header .site-navbar .nav-items .nav-item a {
+  color: var(--header-item-color, #fbfefe);
+  text-decoration: none;
+}
+
+#site-header .site-navbar .nav-items .nav-item a:hover {
+  color: var(--header-item-color, #fbfefe);
+  text-decoration: underline;
+}
+
+#section-1 {
+  background-image: url("../images/Desktop_images/Hero_desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  border-bottom: 14px solid #e69527;
+}
+
+#section-1 .container {
+  position: relative;
+}
+
+#section-1 .container .title {
+  padding-top: 70px;
+  text-align: center;
+  letter-spacing: .15rem;
+  font-size: 3.5rem;
+}
+
+#section-1 .container .logo {
+  position: absolute;
+  bottom: 60px;
+  right: 0px;
+  width: 225px;
+  height: 75px;
+}
+
+/*Section 2 CSS is below*/
+#section-2 {}
+
+#section-2 .container h2 {
+  text-align: center;
+  padding: 50px 0;
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+}
+
+#section-2 .container .row {
+  display: flex;
+}
+
+#section-2 .container .row .widget {
+  padding: 0 4px;
+}
+
+#section-2 .container .row .widget .widget-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-2 .container .row .widget.widget1 .widget-top {
+  height: 200px;
+  background-image: url("../images/Desktop_images/LE.jpg");
+}
+
+#section-2 .container .row .widget.widget2 .widget-top {
+  height: 200px;
+  background-image: url("../images/Desktop_images/LE_hybrid.jpg");
+}
+
+#section-2 .container .row .widget.widget3 .widget-top {
+  height: 200px;
+  background-image: url("../images/Desktop_images/XLE.jpg");
+}
+
+#section-2 .container .row .widget .widget-top .model-type {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  padding: 10px 70px;
+}
+
+#section-2 .container .row .widget .widget-top .model-type h3 {
+  color: white;
+}
+
+#section-2 .container .row .widget .widget-bottom {
+  width: 100%;
+  background: #f7f7f7;
+  padding: 15px 20px 24px 20px;
+}
+
+#section-2 .container .row .widget .widget-bottom .price {
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1.5rem;
+}
+
+#section-2 .container .row .widget .widget-bottom .interest-rate {
+  display: block;
+  text-align: center;
+  padding-top: 4px;
+  font-size: 1.1rem;
+}
+
+#section-2 .container .row .widget .widget-bottom .driving-system {
+  display: block;
+  text-align: center;
+  padding-top: 4px;
+  font-size: .9rem;
+}
+
+#section-2 .container .row .widget .widget-bottom .model-description {
+  display: block;
+  text-align: center;
+  padding-top: 4px;
+  font-size: .9rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+}
+
+#section-2 .model-table {
+  margin: 80px auto 80px auto;
+  width: 65%;
+}
+
+#section-2 .model-table .table-header-row {
+  text-align: left;
+  border-bottom: 5px solid #e69527;
+}
+
+#section-2 .model-table .table-header-row .table-header-col {
+  padding: 10px 8px;
+  font-weight: bold;
+}
+
+#section-2 .model-table .table-data-row .table-col1 {
+  padding: 14px 8px;
+  font-weight: bold;
+}
+
+#section-2 .model-table .table-data-row-alt {
+  background: #f7f7f7;
+}
+
+#section-2 .model-table .table-data-row-alt .table-col1 {
+  padding: 14px 8px;
+  font-weight: bold;
+}
+
+/*Below is the section 3 CSS*/
+#section-3 {
+  background-image: url("../images/Desktop_images/Learn_more_BG_desktop.jpg");
+  height: 583px;
+}
+
+#section-3 {
+  display: flex;
+  align-items: center;
+}
+
+#section-3 .info-box {
+  background: white;
+  height: 250px;
+  opacity: .9;
+}
+
+#section-3 .info-box .info-box-content {
+  padding: 40px 25px;
+  margin: 0 auto;
+  width: 85%;
+}
+
+#section-3 .info-box .info-box-content h2 {
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+}
+
+#section-3 .info-box .info-box-content p {
+  line-height: 1.4rem;
+  margin-bottom: 20px;
+}
+
+#section-3 .info-box .info-box-content button {
+  background: #35a6cc;
+  padding: 12px 15px;
+  width: 250px;
+  border-radius: 0;
+}
+
+#section-3 .info-box .info-box-content button span {
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+/*Below is the section 4 CSS*/
+#section-4 {
+  position: relative;
+  height: 500px;
+}
+
+#section-4 .highlight-tl-img {
+  position: absolute;
+}
+
+#section-4 .highlight-br-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#section-4 h2 {
+  text-align: center;
+  padding: 65px 0;
+  font-size: 2.2rem;
+}
+
+#section-4 .container {}
+
+#section-4 .container .row {}
+
+#section-4 .container .row .highlight {
+  vertical-align: top;
+  display: inline-block;
+}
+
+#section-4 .container .row .highlight .title {
+  text-align: center;
+  color: #e29328;
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+
+#section-4 .container .row .highlight .sub-title {
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#section-4 .container .row .highlight .link {
+  text-align: center;
+  display: inline-block;
+  padding: 0 10px;
+  width: 100%
+}
+
+#section-4 .container .row .highlight .link span {
+  text-align: center;
+}
+
+/*Below is the section 5 CSS*/
+#section-5 {
+  height: 600px;
+  background-image: url("../images/Desktop_images/Safety_speed_BG_desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#section-5 .spec-box1 {
+  position: absolute;
+  right: 0;
+  background: white;
+  width: 35%;
+  height: 50%;
+}
+
+#section-5 .spec-box1 .box-content {
+  padding: 60px 40px;
+  max-width: 375px;
+}
+
+#section-5 .spec-box1 .box-content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+#section-5 .spec-box1 .box-content p {
+  line-height: 28px;
+}
+
+#section-5 .spec-box2 {
+  position: absolute;
+  bottom: 0;
+  opacity: .9;
+  background: #2a3942;
+  width: 65%;
+  height: 50%;
+}
+
+#section-5 .spec-box2 .box-content {
+  padding: 60px 40px;
+}
+
+#section-5 .spec-box2 .box-content h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+#section-5 .spec-box2 .box-content p {
+  color: white;
+  line-height: 28px;
+  max-width: 800px;
+  margin-bottom: 15px;
+}
+
+#section-5 .spec-box2 .box-content a {
+  color: white;
+  text-decoration: underline;
+}
+
+/*Below is the section 6 CSS*/
+#section-6 {}
+
+#section-6 h2 {
+  text-align: center;
+  padding: 65px 0;
+  font-size: 2.2rem;
+}
+
+#section-6 .container {}
+
+#section-6 .container .features {
+  margin: 0 auto;
+  width: 60%;
+}
+
+#section-6 .container .features-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 52px;
+}
+
+#section-6 .container .features-item .feature-img {
+  width: 100px;
+  height: 75px;
+  margin-right: 30px;
+}
+
+#section-6 .container .features-item .feature-text {}
+
+/*Below is the section 7 CSS*/
+#section-7 {
+  height: 750px;
+}
+
+#section-7 .top {
+  background-image: url("../images/Desktop_images/Testimonials_BG_desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+#section-7 .top h2 {
+  padding: 65px 0;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+#section-7 .container {
+  height: auto;
+}
+
+#section-7 .review-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#section-7 .review-container .container .reviews {
+  position: absolute;
+  top: 50%;
+  /* position the top  edge of the element at the middle of the parent */
+  left: 50%;
+  /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%);
+  /* This is a shorthand of
+                                       translateX(-50%) and translateY(-50%) */
+}
+
+#section-7 .review-container .container .reviews .review {
+  background: white;
+  display: inline-block;
+  vertical-align: top;
+  min-height: 242px;
+}
+
+#section-7 .review-container .container .reviews .review {
+  padding: 28px 40px;
+  -webkit-box-shadow: -2px 3px 5px -3px rgba(148, 136, 148, 1);
+  -moz-box-shadow: -2px 3px 5px -3px rgba(148, 136, 148, 1);
+  box-shadow: -2px 3px 5px -3px rgba(148, 136, 148, 1);
+}
+
+#section-7 .review-container .container .reviews .review .quote {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  line-height: 30px;
+  min-height: 87px;
+  font-style: italic;
+}
+
+#section-7 .review-container .container .reviews .reviewer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#section-7 .review-container .container .reviews .reviewer img {
+  width: 75px;
+}
+
+#section-7 .review-container .container .reviews .reviewer p {
+  margin: 0;
+}
+
+#section-7 .bottom {
+  background: #f9f9f9;
+  height: 400px;
+}
+
+/*Below is the section 8 CSS*/
+#section-8 {
+  height: 100px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-8 button {
+  background-color: #35a6cc;
+  transition: background-color 60ms linear;
+  padding: 5px 15px;
+  width: 250px;
+  height: 50px;
+  border-radius: 0;
+  color: black;
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+#section-8 button:hover {
+  background-color: #e69527;
+  color: white;
+  cursor: pointer;
+}
+
+#section-8 button span:hover {
+  background: #e69527;
+  color: white;
+}
+
+#section-8 button span {
+  color: black;
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+/*Below is the site-footer CSS*/
+#site-footer {
+  min-height: 100px;
+  background: #2b3c44;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#site-footer .footer-list {
+  display: flex;
+  color: white;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+#site-footer .footer-item {
+  color: white;
+  text-align: center;
+  margin-right: 20px;
+  letter-spacing: 1.2px;
+}
+
+#site-footer .footer-item a {
+  color: white;
+  text-decoration: none;
+}
+
+#site-footer .footer-item a:hover {
+  text-decoration: underline;
+}
+
+#site-footer .footer-separator {
+  color: white;
+  margin-right: 20px;
+}
+
+#site-footer span {
+  display: block;
+  color: white;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/*Below are our media queries*/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
