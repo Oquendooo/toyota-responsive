@@ -916,6 +916,12 @@ table {
   }
 }
 
+@media (min-width: 630px) {
+  #site-header .mobile-menu {
+    display: none;
+  }
+}
+
 /*Below is the CSS for medium size devices (tablets 768px)*/
 @media (max-width: 768px) {
 
@@ -1087,4 +1093,47 @@ table {
   #section-7 .review-container .container .reviews {
     width: 56%;
   }
+}
+
+/*testingggggggggg*/
+.mobile-menu {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  top: 50px;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  background: #2c3c44;
+  z-index: 10;
+}
+
+.mobile-menu .li {}
+
+.mobile-menu.active li {
+  padding: 14px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 2.5px solid rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.mobile-menu.active li a {
+  text-decoration: none;
+  color: white;
+}
+
+.mobile-menu.active li a:hover {
+  text-decoration: underline;
+}
+
+.mobile-menu.active {
+  transform: translate3d(0, 0, 0);
+  -webkit-box-shadow: 2px 0px 78px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 0px 78px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 0px 78px -15px rgba(0, 0, 0, 0.75);
+}
+
+.active {
+  display: flex;
 }
