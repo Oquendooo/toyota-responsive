@@ -103,6 +103,19 @@ table {
   width: 100%;
 }
 
+/* Below is some utility CSS Above*/
+.hide {
+  display: none;
+}
+
+.show-block {
+  display: block;
+}
+
+.show-flex {
+  display: flex;
+}
+
 /* Basic CSS grid system is Above*/
 :root {
   --header-height: 50px;
@@ -111,16 +124,23 @@ table {
 
 .container {
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1280px;
-  width: 90%;
+  max-width: 1280px;
+  width: 100%;
   height: 100%;
 }
 
 /*Section 1 CSS is below*/
 #site-header {
+  display: block;
   background: #2c3c44;
+  height: var(--header-height, 50px);
+}
+
+#site-header .fas.fa-bars {
+  display: none;
+  color: white;
+  margin-left: 15px;
+  font-size: 2rem;
 }
 
 #site-header .site-navbar {
@@ -152,6 +172,7 @@ table {
 }
 
 #section-1 {
+  display: block;
   background-image: url("../images/Desktop_images/Hero_desktop.jpg");
   background-position: center;
   background-size: cover;
@@ -164,7 +185,7 @@ table {
 }
 
 #section-1 .container .title {
-  padding-top: 70px;
+  padding: 70px 10px 0 10px;
   text-align: center;
   letter-spacing: .15rem;
   font-size: 3.5rem;
@@ -178,8 +199,14 @@ table {
   height: 75px;
 }
 
+#section-1 .container .mobile-logo {
+  display: none;
+}
+
 /*Section 2 CSS is below*/
-#section-2 {}
+#section-2 {
+  display: block;
+}
 
 #section-2 .container h2 {
   text-align: center;
@@ -205,31 +232,47 @@ table {
 #section-2 .container .row .widget.widget1 .widget-top {
   height: 200px;
   background-image: url("../images/Desktop_images/LE.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 #section-2 .container .row .widget.widget2 .widget-top {
   height: 200px;
   background-image: url("../images/Desktop_images/LE_hybrid.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 #section-2 .container .row .widget.widget3 .widget-top {
   height: 200px;
   background-image: url("../images/Desktop_images/XLE.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
-#section-2 .container .row .widget .widget-top .model-type {
+#section-2 .container .row .widget .widget-top .model-link {
+  transition: background-color 60ms linear;
+}
+
+#section-2 .container .row .widget .widget-top .model-link:hover {
+  background: #e69527;
+}
+
+#section-2 .container .row .widget .widget-top .model-link .model-type {
   display: inline-block;
   border: 1px solid #ffffff;
-  padding: 10px 70px;
+  padding: 10px 46px;
 }
 
-#section-2 .container .row .widget .widget-top .model-type h3 {
+#section-2 .container .row .widget .widget-top .model-link .model-type h3 {
+  text-align: center;
   color: white;
+  width: 75px;
 }
 
 #section-2 .container .row .widget .widget-bottom {
   width: 100%;
-  background: #f7f7f7;
+  background: #ebebeb;
   padding: 15px 20px 24px 20px;
 }
 
@@ -261,11 +304,16 @@ table {
   font-size: .9rem;
   font-weight: 400;
   line-height: 1.3rem;
+  min-height: 63.5px;
 }
 
 #section-2 .model-table {
   margin: 80px auto 80px auto;
   width: 65%;
+}
+
+#section-2 .mobile-model-table {
+  display: none;
 }
 
 #section-2 .model-table .table-header-row {
@@ -295,6 +343,8 @@ table {
 /*Below is the section 3 CSS*/
 #section-3 {
   background-image: url("../images/Desktop_images/Learn_more_BG_desktop.jpg");
+  background-position: center;
+  background-size: cover;
   height: 583px;
 }
 
@@ -326,10 +376,16 @@ table {
 }
 
 #section-3 .info-box .info-box-content button {
+  transition: background-color 60ms linear;
   background: #35a6cc;
   padding: 12px 15px;
   width: 250px;
   border-radius: 0;
+}
+
+#section-3 .info-box .info-box-content button:hover {
+  background-color: #e69527;
+  cursor: pointer;
 }
 
 #section-3 .info-box .info-box-content button span {
@@ -341,6 +397,7 @@ table {
 #section-4 {
   position: relative;
   height: 500px;
+  border-bottom: 1px solid #707273;
 }
 
 #section-4 .highlight-tl-img {
@@ -385,7 +442,7 @@ table {
 #section-4 .container .row .highlight .link {
   text-align: center;
   display: inline-block;
-  padding: 0 10px;
+  padding: 12px 10px;
   width: 100%
 }
 
@@ -411,13 +468,13 @@ table {
 }
 
 #section-5 .spec-box1 .box-content {
-  padding: 60px 40px;
+  padding: 45px 40px 0 40px;
   max-width: 375px;
 }
 
 #section-5 .spec-box1 .box-content h2 {
   font-size: 2rem;
-  margin-bottom: 15px;
+  margin-bottom: 24px;
 }
 
 #section-5 .spec-box1 .box-content p {
@@ -429,12 +486,12 @@ table {
   bottom: 0;
   opacity: .9;
   background: #2a3942;
-  width: 65%;
+  width: 68.5%;
   height: 50%;
 }
 
 #section-5 .spec-box2 .box-content {
-  padding: 60px 40px;
+  padding: 60px 40px 0 50px;
 }
 
 #section-5 .spec-box2 .box-content h2 {
@@ -540,10 +597,10 @@ table {
 }
 
 #section-7 .review-container .container .reviews .review .quote {
-  font-size: 1.3rem;
+  font-size: 2.1rem;
   margin-bottom: 20px;
-  line-height: 30px;
-  min-height: 87px;
+  line-height: 38px;
+  min-height: 191px;
   font-style: italic;
 }
 
@@ -568,6 +625,7 @@ table {
 
 /*Below is the section 8 CSS*/
 #section-8 {
+  margin-top: 100px;
   height: 100px;
   background: white;
   display: flex;
@@ -643,6 +701,10 @@ table {
   margin-right: 20px;
 }
 
+#site-footer .footer-logo {
+  display: none;
+}
+
 #site-footer span {
   display: block;
   color: white;
@@ -650,10 +712,285 @@ table {
   margin-bottom: 60px;
 }
 
+/*This is the end of the Desktop version CSS*/
+/*------------------------------------------*/
+@media (max-width: 525px) {
+  #section-3 .info-box {
+    margin: 0px 10px;
+  }
+}
+
 /*Below are our media queries*/
+@media (max-width: 630px) {
+  #site-header .container {
+    display: flex;
+    align-items: center;
+  }
+
+  #site-header .site-navbar {
+    display: none;
+  }
+
+  #site-header .fas.fa-bars {
+    display: inline-block;
+  }
+
+  /*Below is Section 2 CSS*/
+  /*Section 2 CSS*/
+  #section-2 .container .row {
+    flex-direction: column;
+  }
+
+  #section-2 .container .row .widget {
+    padding: 0;
+  }
+
+  #section-2 .container .row .widget {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  #section-2 .model-table {
+    display: none;
+  }
+
+  #section-2 .mobile-model-table {
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 90%;
+    min-width: 300px;
+  }
+
+  #section-2 .mobile-model-table {
+    display: block;
+    justify-content: center;
+    max-width: 400px;
+  }
+
+  #section-2 .mobile-model-table tbody {
+    margin: 0 auto;
+  }
+
+  #section-2 .mobile-model-table .table-header-row {
+    text-align: left;
+    border-bottom: 5px solid #e69527;
+  }
+
+  #section-2 .mobile-model-table .table-header-row .table-header-col {
+    padding: 10px 4px;
+    font-weight: bold;
+  }
+
+  #section-2 .mobile-model-table .table-data-row .table-col1 {
+    padding: 14px 4px;
+    min-width: 180px;
+    font-weight: bold;
+  }
+
+  #section-2 .mobile-model-table .table-data-row .table-data {
+    padding: 14px 4px;
+    min-width: 180px;
+    font-weight: bold;
+  }
+
+  #section-2 .mobile-model-table .table-data-row-alt {
+    background: #f7f7f7;
+    border-bottom: 3px solid #ededed;
+  }
+
+  #section-2 .mobile-model-table .table-data-row-alt .table-col1 {
+    padding: 14px 4px;
+    font-weight: bold;
+  }
+
+  /* Mobile Model table is Above*/
+  /*Above is Section 2 CSS*/
+  /*Section 4 CSS*/
+  #section-4 {
+    height: unset;
+  }
+
+  #section-4 .highlight-tl-img {
+    display: none;
+  }
+
+  #section-4 .highlight-br-img {
+    display: none;
+  }
+
+  #section-4 .container .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #section-4 .container .highlight {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  /*Below is footer CSS*/
+  #site-footer .footer-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #site-footer .footer-list .footer-item {
+    margin-right: 0px;
+    margin-bottom: 18px;
+  }
+
+  #site-footer .footer-separator {
+    display: none;
+  }
+
+  #site-footer .footer-logo {
+    display: block;
+    margin-bottom: 30px;
+    width: 155px;
+  }
+}
+
+/*Below is the CSS for medium size devices (tablets 768px)*/
+@media (max-width: 768px) {
+
+  /*Section 1 CSS*/
+  #section-1 {
+    display: block;
+    background-image: none;
+    background: white;
+    max-height: 375px;
+    border-bottom: 14px solid #e69527;
+  }
+
+  #section-1 .container .logo {
+    display: none;
+  }
+
+  #section-1 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    margin: 0 auto;
+  }
+
+  #section-1 .container .title {
+    display: block;
+    padding: 30px 20px 50px 20px;
+    margin: 0 auto;
+  }
+
+  #section-1 .container .mobile-logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /*Section 3 CSS*/
+  #section-3 .info-box {
+    margin: 0 auto;
+  }
+
+  #section-3 .info-box .info-box-content {
+    text-align: center;
+  }
+
+  #section-4 {
+    background: #f9f9f9;
+    border-bottom: none;
+  }
+
+  /*Section 5 CSS*/
+  #section-5 {
+    display: block;
+    height: auto;
+  }
+
+  #section-5 .spec-box1 {
+    position: static;
+    display: block;
+    background: white;
+    width: 100%;
+    height: 50%;
+  }
+
+  #section-5 .spec-box1 .box-content {
+    padding: 40px 40px 40px 40px;
+    margin: 0 auto;
+    max-width: 768px;
+  }
+
+  #section-5 .spec-box1 .box-content p {}
+
+  #section-5 .spec-box2 {
+    position: static;
+    display: block;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+  }
+
+  #section-5 .spec-box2 .box-content {
+    padding: 40px 40px 40px 40px;
+    margin: 0 auto;
+  }
+
+  /*Section 6 CSS*/
+  #section-6 .container .features {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  #section-6 .container .features-item {
+    flex-direction: column;
+  }
+
+  #section-6 .container .features-item .feature-img {
+    width: 100px;
+    height: 75px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #section-6 .container .features-item .feature-text {
+    text-align: center;
+    padding: 0 15px;
+    line-height: 28px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
+  }
+}
+
+/*Below is the CSS for Large devices (desktops 992px)*/
+@media (max-width: 992px) {
+  .site-navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #site-header .site-navbar .nav-items .nav-item {
+    padding: 0 25px;
+  }
+
+  #section-2 .container .row .widget .widget-bottom .model-description {
+    min-height: 83.5px;
+  }
+
+  #section-4 .highlight-tl-img {
+    display: none;
+  }
+
+  #section-4 .highlight-br-img {
+    display: none;
+  }
+
+  #section-4 .container .row .highlight {
+    width: 32%;
   }
 }
 
@@ -662,6 +999,9 @@ table {
     width: 970px;
   }
 }
+
+/*Below is the CSS for Extra large devices (large desktops, 1200px)*/
+@media (max-width: 1200px) {}
 
 @media (min-width: 1200px) {
   .container {
