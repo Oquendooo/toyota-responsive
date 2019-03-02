@@ -131,6 +131,10 @@ table {
 
 /*Section 1 CSS is below*/
 #site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
   display: block;
   background: #2c3c44;
   height: var(--header-height, 50px);
@@ -947,7 +951,7 @@ table {
 
   #section-1 .container .title {
     display: block;
-    padding: 30px 20px 50px 20px;
+    padding: 70px 20px 50px 20px;
     margin: 0 auto;
   }
 
@@ -1095,7 +1099,7 @@ table {
   }
 }
 
-/*testingggggggggg*/
+/*Below is the mobile menu CSS*/
 .mobile-menu {
   display: none;
   position: absolute;
@@ -1106,6 +1110,8 @@ table {
   list-style: none;
   background: #2c3c44;
   z-index: 10;
+  transform: translate3d(0, -100%, 0);
+  transition: all .4s ease-in-out;
 }
 
 .mobile-menu .li {}
@@ -1136,4 +1142,8 @@ table {
 
 .active {
   display: flex;
+}
+
+.menu-btn {
+  cursor: pointer;
 }
