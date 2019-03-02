@@ -571,7 +571,13 @@ table {
   position: absolute;
 }
 
+#section-7 .review-container .container .mobile-title {
+  display: none;
+}
+
 #section-7 .review-container .container .reviews {
+  display: flex;
+  justify-content: space-around;
   position: absolute;
   top: 50%;
   /* position the top  edge of the element at the middle of the parent */
@@ -612,6 +618,7 @@ table {
 
 #section-7 .review-container .container .reviews .reviewer img {
   width: 75px;
+  margin-right: 15px;
 }
 
 #section-7 .review-container .container .reviews .reviewer p {
@@ -720,6 +727,8 @@ table {
   }
 }
 
+@media (min-width: 576px) {}
+
 /*Below are our media queries*/
 @media (max-width: 630px) {
   #site-header .container {
@@ -735,7 +744,6 @@ table {
     display: inline-block;
   }
 
-  /*Below is Section 2 CSS*/
   /*Section 2 CSS*/
   #section-2 .container .row {
     flex-direction: column;
@@ -828,6 +836,62 @@ table {
   #section-4 .container .highlight {
     width: 100%;
     margin-bottom: 60px;
+  }
+
+  /*Below is the section 7 CSS*/
+  #section-7 {}
+
+  #section-7 .top {
+    display: none;
+  }
+
+  #section-7 .top h2 {}
+
+  #section-7 .container {}
+
+  #section-7 .review-container {
+    background: #f9f9f9;
+    width: 100%;
+    height: auto;
+    position: absolute;
+  }
+
+  #section-7 .review-container .container .mobile-title {
+    display: block;
+    text-align: center;
+    padding: 65px 0 20px;
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  #section-7 .review-container .container .reviews {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: static;
+    top: auto;
+    /* position the top  edge of the element at the middle of the parent */
+    left: auto;
+    /* position the left edge of the element at the middle of the parent */
+    -webkit-transform: none;
+    transform: none;
+    /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+  }
+
+  #section-7 .review-container .container .reviews .review {
+    padding: 28px 0px;
+    background: #f9f9f9;
+    width: 100%;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  #section-7 .bottom {
+    display: none;
   }
 
   /*Below is footer CSS*/
@@ -957,6 +1021,10 @@ table {
     padding: 0 15px;
     line-height: 28px;
   }
+
+  #section-7 .review-container .container .reviews {
+    width: 90%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -992,6 +1060,10 @@ table {
   #section-4 .container .row .highlight {
     width: 32%;
   }
+
+  #section-7 .review-container .container .reviews {
+    width: 65%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1001,10 +1073,18 @@ table {
 }
 
 /*Below is the CSS for Extra large devices (large desktops, 1200px)*/
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+  #section-7 .review-container .container .reviews {
+    width: 85%;
+  }
+}
 
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+  }
+
+  #section-7 .review-container .container .reviews {
+    width: 56%;
   }
 }
