@@ -117,9 +117,18 @@ table {
 }
 
 /* Basic CSS grid system is Above*/
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/roboto/roboto-regular.ttf);
+}
+
 :root {
   --header-height: 50px;
   --header-item-color: #fbfefe;
+}
+
+body {
+  font-family: Roboto;
 }
 
 .container {
@@ -189,7 +198,7 @@ table {
 }
 
 #section-1 .container .title {
-  padding: 70px 10px 0 10px;
+  padding: 100px 10px 0 10px;
   text-align: center;
   letter-spacing: .15rem;
   font-size: 3.5rem;
@@ -197,7 +206,7 @@ table {
 
 #section-1 .container .logo {
   position: absolute;
-  bottom: 60px;
+  bottom: 55px;
   right: 0px;
   width: 225px;
   height: 75px;
@@ -272,47 +281,52 @@ table {
   text-align: center;
   color: white;
   width: 75px;
+  font-size: 1.6rem;
+  width: 110px;
 }
 
 #section-2 .container .row .widget .widget-bottom {
   width: 100%;
   background: #ebebeb;
-  padding: 15px 20px 24px 20px;
+  padding: 25px 20px 25px 20px;
 }
 
 #section-2 .container .row .widget .widget-bottom .price {
   display: block;
   text-align: center;
-  padding-top: 10px;
   font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
 }
 
 #section-2 .container .row .widget .widget-bottom .interest-rate {
   display: block;
   text-align: center;
-  padding-top: 4px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
 #section-2 .container .row .widget .widget-bottom .driving-system {
   display: block;
   text-align: center;
-  padding-top: 4px;
-  font-size: .9rem;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  font-weight: 700;
 }
 
 #section-2 .container .row .widget .widget-bottom .model-description {
   display: block;
   text-align: center;
-  padding-top: 4px;
   font-size: .9rem;
   font-weight: 400;
   line-height: 1.3rem;
+  margin: 0 10px;
   min-height: 63.5px;
 }
 
 #section-2 .model-table {
-  margin: 80px auto 80px auto;
+  margin: 70px auto 80px auto;
   width: 65%;
 }
 
@@ -359,32 +373,35 @@ table {
 
 #section-3 .info-box {
   background: white;
-  height: 250px;
+  height: auto;
   opacity: .9;
 }
 
 #section-3 .info-box .info-box-content {
-  padding: 40px 25px;
+  padding: 40px 25px 40px 36px;
   margin: 0 auto;
   width: 85%;
 }
 
 #section-3 .info-box .info-box-content h2 {
-  font-size: 1.9rem;
-  margin-bottom: 20px;
+  font-size: 3.0rem;
+  margin-bottom: 28px;
 }
 
 #section-3 .info-box .info-box-content p {
-  line-height: 1.4rem;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  margin-bottom: 30px;
+  max-width: 433px;
 }
 
 #section-3 .info-box .info-box-content button {
   transition: background-color 60ms linear;
   background: #35a6cc;
-  padding: 12px 15px;
-  width: 250px;
+  padding: 20px 22px;
+  width: 298px;
   border-radius: 0;
+  margin-bottom: 8px;
 }
 
 #section-3 .info-box .info-box-content button:hover {
@@ -393,14 +410,14 @@ table {
 }
 
 #section-3 .info-box .info-box-content button span {
-  font-size: .9rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
 /*Below is the section 4 CSS*/
 #section-4 {
   position: relative;
-  height: 500px;
+  height: 570px;
   border-bottom: 1px solid #707273;
 }
 
@@ -432,14 +449,16 @@ table {
 #section-4 .container .row .highlight .title {
   text-align: center;
   color: #e29328;
-  font-size: 3.5rem;
+  font-size: 5rem;
+  font-weight: 800;
   margin-bottom: 15px;
 }
 
 #section-4 .container .row .highlight .sub-title {
+  font-size: 1.62rem;
   text-align: center;
   display: block;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 15px;
 }
 
@@ -447,11 +466,18 @@ table {
   text-align: center;
   display: inline-block;
   padding: 12px 10px;
-  width: 100%
+  width: 100%;
+  line-height: 24px;
 }
 
 #section-4 .container .row .highlight .link span {
   text-align: center;
+}
+
+#section-4 .container .row .highlight .link p {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 240px;
 }
 
 /*Below is the section 5 CSS*/
@@ -522,7 +548,7 @@ table {
 #section-6 h2 {
   text-align: center;
   padding: 65px 0;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
 }
 
 #section-6 .container {}
@@ -530,6 +556,7 @@ table {
 #section-6 .container .features {
   margin: 0 auto;
   width: 60%;
+  margin-bottom: 80px;
 }
 
 #section-6 .container .features-item {
@@ -544,7 +571,11 @@ table {
   margin-right: 30px;
 }
 
-#section-6 .container .features-item .feature-text {}
+#section-6 .container .features-item .feature-text {
+  font-weight: 800;
+  font-size: 1.2rem;
+  line-height: 26px;
+}
 
 /*Below is the section 7 CSS*/
 #section-7 {
@@ -631,7 +662,7 @@ table {
 
 #section-7 .bottom {
   background: #f9f9f9;
-  height: 400px;
+  height: 275px;
 }
 
 /*Below is the section 8 CSS*/
@@ -768,14 +799,14 @@ table {
 
   #section-2 .mobile-model-table {
     margin: 0 auto;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 35px;
+    margin-bottom: 60px;
     width: 90%;
     min-width: 300px;
   }
 
   #section-2 .mobile-model-table {
-    display: block;
+    display: flex;
     justify-content: center;
     max-width: 400px;
   }
@@ -814,6 +845,18 @@ table {
   #section-2 .mobile-model-table .table-data-row-alt .table-col1 {
     padding: 14px 4px;
     font-weight: bold;
+  }
+
+  #section-3 .info-box {
+    margin: 0 12px;
+  }
+
+  #section-3 .info-box .info-box-content {
+    padding: 40px 25px 40px 26px;
+  }
+
+  #section-3 .info-box .info-box-content button {
+    width: 250px;
   }
 
   /* Mobile Model table is Above*/
@@ -951,8 +994,8 @@ table {
 
   #section-1 .container .title {
     display: block;
-    padding: 70px 20px 50px 20px;
-    margin: 0 auto;
+    padding: 30px 20px 50px 20px;
+    margin: 52px auto 0 auto;
   }
 
   #section-1 .container .mobile-logo {
@@ -1116,7 +1159,7 @@ table {
 
 .mobile-menu .li {}
 
-.mobile-menu.active li {
+.mobile-menu.active .menu-link {
   padding: 14px 40px;
   font-size: 18px;
   font-weight: 600;
@@ -1124,12 +1167,12 @@ table {
   color: white;
 }
 
-.mobile-menu.active li a {
+.mobile-menu.active .menu-link a {
   text-decoration: none;
   color: white;
 }
 
-.mobile-menu.active li a:hover {
+.mobile-menu.active .menu-link a:hover {
   text-decoration: underline;
 }
 
