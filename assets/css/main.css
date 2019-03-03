@@ -1,4 +1,6 @@
+/*--------------------*/
 /*Below is a css reset*/
+/*--------------------*/
 * {
   box-sizing: border-box;
 }
@@ -53,8 +55,9 @@ table {
   border-spacing: 0;
 }
 
-/*Above is a css reset*/
-/* Basic CSS grid system is below*/
+/*------------------------------------------*/
+/* Below is a basic CSS grid system is below*/
+/*------------------------------------------*/
 .col-1 {
   width: 8.33%;
 }
@@ -103,25 +106,23 @@ table {
   width: 100%;
 }
 
-/* Below is some utility CSS Above*/
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
+
+/* Below is some utility CSS*/
 .hide {
   display: none;
 }
 
-.show-block {
-  display: block;
-}
-
-.show-flex {
-  display: flex;
-}
-
-/* Basic CSS grid system is Above*/
 @font-face {
   font-family: Roboto;
   src: url(../fonts/roboto/roboto-regular.ttf);
 }
 
+/*Below are CSS variables I've defined */
 :root {
   --header-height: 50px;
   --header-item-color: #fbfefe;
@@ -131,22 +132,17 @@ body {
   font-family: Roboto;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1280px;
-  width: 100%;
-  height: 100%;
-}
-
-/*Section 1 CSS is below*/
+/*-----------------------------*/
+/*Below is the #site-header CSS*/
+/*-----------------------------*/
 #site-header {
+  height: var(--header-height, 50px);
+  background: #2c3c44;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   display: block;
-  background: #2c3c44;
-  height: var(--header-height, 50px);
 }
 
 #site-header .fas.fa-bars {
@@ -156,34 +152,37 @@ body {
   font-size: 2rem;
 }
 
-#site-header .site-navbar {
-  background: #2c3c44;
+#site-header .container {
   height: var(--header-height, 50px);
+  background: #2c3c44;
 }
 
-#site-header .site-navbar .nav-items {
-  list-style-type: none;
+#site-header .nav-items {
   height: var(--header-height, 50px);
+  color: var(--header-item-color, #fbfefe);
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  color: var(--header-item-color, #fbfefe);
+  list-style-type: none;
 }
 
-#site-header .site-navbar .nav-items .nav-item {
+#site-header .nav-items .nav-item {
   padding-left: 60px;
 }
 
-#site-header .site-navbar .nav-items .nav-item a {
+#site-header .nav-items .nav-item a {
   color: var(--header-item-color, #fbfefe);
   text-decoration: none;
 }
 
-#site-header .site-navbar .nav-items .nav-item a:hover {
+#site-header .nav-items .nav-item a:hover {
   color: var(--header-item-color, #fbfefe);
   text-decoration: underline;
 }
 
+/*---------------------------*/
+/*Below is the #section-1 CSS*/
+/*---------------------------*/
 #section-1 {
   display: block;
   background-image: url("../images/Desktop_images/Hero_desktop.jpg");
@@ -202,6 +201,7 @@ body {
   text-align: center;
   letter-spacing: .15rem;
   font-size: 3.5rem;
+  font-weight: bold;
 }
 
 #section-1 .container .logo {
@@ -216,7 +216,9 @@ body {
   display: none;
 }
 
-/*Section 2 CSS is below*/
+/*---------------------------*/
+/*Below is the #section-2 CSS*/
+/*---------------------------*/
 #section-2 {
   display: block;
 }
@@ -358,7 +360,9 @@ body {
   font-weight: bold;
 }
 
-/*Below is the section 3 CSS*/
+/*---------------------------*/
+/*Below is the #section-3 CSS*/
+/*---------------------------*/
 #section-3 {
   background-image: url("../images/Desktop_images/Learn_more_BG_desktop.jpg");
   background-position: center;
@@ -410,11 +414,13 @@ body {
 }
 
 #section-3 .info-box .info-box-content button span {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
-/*Below is the section 4 CSS*/
+/*---------------------------*/
+/*Below is the #section-4 CSS*/
+/*---------------------------*/
 #section-4 {
   position: relative;
   height: 570px;
@@ -480,7 +486,9 @@ body {
   max-width: 240px;
 }
 
-/*Below is the section 5 CSS*/
+/*---------------------------*/
+/*Below is the #section-5 CSS*/
+/*---------------------------*/
 #section-5 {
   height: 600px;
   background-image: url("../images/Desktop_images/Safety_speed_BG_desktop.jpg");
@@ -503,7 +511,7 @@ body {
 }
 
 #section-5 .spec-box1 .box-content h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 24px;
 }
 
@@ -526,15 +534,15 @@ body {
 
 #section-5 .spec-box2 .box-content h2 {
   color: white;
-  font-size: 2rem;
-  margin-bottom: 15px;
+  font-size: 2.5rem;
+  margin-bottom: 28px;
 }
 
 #section-5 .spec-box2 .box-content p {
   color: white;
   line-height: 28px;
   max-width: 800px;
-  margin-bottom: 15px;
+  margin-bottom: 32px;
 }
 
 #section-5 .spec-box2 .box-content a {
@@ -542,8 +550,12 @@ body {
   text-decoration: underline;
 }
 
-/*Below is the section 6 CSS*/
-#section-6 {}
+/*---------------------------*/
+/*Below is the #section-6 CSS*/
+/*---------------------------*/
+#section-6 {
+  padding: 10px 0;
+}
 
 #section-6 h2 {
   text-align: center;
@@ -577,7 +589,9 @@ body {
   line-height: 26px;
 }
 
-/*Below is the section 7 CSS*/
+/*---------------------------*/
+/*Below is the #section-7 CSS*/
+/*---------------------------*/
 #section-7 {
   height: 750px;
 }
@@ -587,7 +601,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 475px;
 }
 
 #section-7 .top h2 {
@@ -601,16 +615,17 @@ body {
 }
 
 #section-7 .review-container {
+  z-index: 0;
   width: 100%;
-  height: 100%;
+  height: 1000px;
   position: absolute;
 }
 
-#section-7 .review-container .container .mobile-title {
+#section-7 .review-container .mobile-title {
   display: none;
 }
 
-#section-7 .review-container .container .reviews {
+#section-7 .review-container .reviews {
   display: flex;
   justify-content: space-around;
   position: absolute;
@@ -623,56 +638,58 @@ body {
                                        translateX(-50%) and translateY(-50%) */
 }
 
-#section-7 .review-container .container .reviews .review {
+#section-7 .review-container .reviews .review {
   background: white;
   display: inline-block;
   vertical-align: top;
   min-height: 242px;
 }
 
-#section-7 .review-container .container .reviews .review {
+#section-7 .review-container .reviews .review {
   padding: 28px 40px;
   -webkit-box-shadow: -2px 3px 5px -3px rgba(148, 136, 148, 1);
   -moz-box-shadow: -2px 3px 5px -3px rgba(148, 136, 148, 1);
   box-shadow: -2px 3px 5px -3px rgba(148, 136, 148, 1);
 }
 
-#section-7 .review-container .container .reviews .review .quote {
+#section-7 .review-container .reviews .review .quote {
   font-size: 2.1rem;
-  margin-bottom: 20px;
-  line-height: 38px;
+  margin-bottom: 35px;
+  line-height: 44px;
   min-height: 191px;
   font-style: italic;
 }
 
-#section-7 .review-container .container .reviews .reviewer {
+#section-7 .review-container .reviews .reviewer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-#section-7 .review-container .container .reviews .reviewer img {
+#section-7 .review-container .reviews .reviewer img {
   width: 75px;
   margin-right: 15px;
 }
 
-#section-7 .review-container .container .reviews .reviewer p {
+#section-7 .review-container .reviews .reviewer p {
   margin: 0;
 }
 
 #section-7 .bottom {
   background: #f9f9f9;
-  height: 275px;
+  height: 265px;
 }
 
-/*Below is the section 8 CSS*/
+/*---------------------------*/
+/*Below is the #section-8 CSS*/
+/*---------------------------*/
 #section-8 {
-  margin-top: 100px;
-  height: 100px;
+  height: 108px;
   background: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 #section-8 button {
@@ -685,6 +702,7 @@ body {
   color: black;
   font-size: .9rem;
   font-weight: bold;
+  z-index: 1;
 }
 
 #section-8 button:hover {
@@ -704,7 +722,9 @@ body {
   font-weight: bold;
 }
 
-/*Below is the site-footer CSS*/
+/*-----------------------------*/
+/*Below is the #site-footer CSS*/
+/*-----------------------------*/
 #site-footer {
   min-height: 100px;
   background: #2b3c44;
@@ -712,9 +732,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 #site-footer .footer-list {
+  z-index: 1;
   display: flex;
   color: white;
   text-align: center;
@@ -751,12 +773,18 @@ body {
   display: block;
   color: white;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
+  margin-top: 12px;
 }
 
-/*This is the end of the Desktop version CSS*/
-/*------------------------------------------*/
+/*---------------------------------------------------------------------*/
+/*Below is the CSS for all screen sizes that are not desktops and below*/
+/*---------------------------------------------------------------------*/
 @media (max-width: 525px) {
+  #section-1 {
+    height: auto;
+  }
+
   #section-3 .info-box {
     margin: 0px 10px;
   }
@@ -764,14 +792,13 @@ body {
 
 @media (min-width: 576px) {}
 
-/*Below are our media queries*/
 @media (max-width: 630px) {
   #site-header .container {
     display: flex;
     align-items: center;
   }
 
-  #site-header .site-navbar {
+  #site-header .nav-items {
     display: none;
   }
 
@@ -779,7 +806,9 @@ body {
     display: inline-block;
   }
 
-  /*Section 2 CSS*/
+  /*---------------------------*/
+  /*Below is the #section-2 CSS*/
+  /*---------------------------*/
   #section-2 .container .row {
     flex-direction: column;
   }
@@ -847,6 +876,9 @@ body {
     font-weight: bold;
   }
 
+  /*---------------------------*/
+  /*Below is the #section-3 CSS*/
+  /*---------------------------*/
   #section-3 .info-box {
     margin: 0 12px;
   }
@@ -859,9 +891,9 @@ body {
     width: 250px;
   }
 
-  /* Mobile Model table is Above*/
-  /*Above is Section 2 CSS*/
-  /*Section 4 CSS*/
+  /*---------------------------*/
+  /*Below is the #section-4 CSS*/
+  /*---------------------------*/
   #section-4 {
     height: unset;
   }
@@ -885,8 +917,12 @@ body {
     margin-bottom: 60px;
   }
 
-  /*Below is the section 7 CSS*/
-  #section-7 {}
+  /*---------------------------*/
+  /*Below is the #section-7 CSS*/
+  /*---------------------------*/
+  #section-7 {
+    height: 898px;
+  }
 
   #section-7 .top {
     display: none;
@@ -903,15 +939,16 @@ body {
     position: absolute;
   }
 
-  #section-7 .review-container .container .mobile-title {
+  #section-7 .review-container .mobile-title {
     display: block;
     text-align: center;
     padding: 65px 0 20px;
     font-size: 2.2rem;
     text-align: center;
+    margin: 0 6% 0 6%;
   }
 
-  #section-7 .review-container .container .reviews {
+  #section-7 .review-container .reviews {
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -919,16 +956,12 @@ body {
     justify-content: space-around;
     position: static;
     top: auto;
-    /* position the top  edge of the element at the middle of the parent */
     left: auto;
-    /* position the left edge of the element at the middle of the parent */
     -webkit-transform: none;
     transform: none;
-    /* This is a shorthand of
-                                         translateX(-50%) and translateY(-50%) */
   }
 
-  #section-7 .review-container .container .reviews .review {
+  #section-7 .review-container .reviews .review {
     padding: 28px 0px;
     background: #f9f9f9;
     width: 100%;
@@ -941,7 +974,9 @@ body {
     display: none;
   }
 
-  /*Below is footer CSS*/
+  /*---------------------------*/
+  /*Below is the #site-footer CSS*/
+  /*---------------------------*/
   #site-footer .footer-list {
     display: flex;
     flex-direction: column;
@@ -972,7 +1007,9 @@ body {
 /*Below is the CSS for medium size devices (tablets 768px)*/
 @media (max-width: 768px) {
 
-  /*Section 1 CSS*/
+  /*---------------------------*/
+  /*Below is the #section-1 CSS*/
+  /*---------------------------*/
   #section-1 {
     display: block;
     background-image: none;
@@ -1003,7 +1040,9 @@ body {
     margin: 0 auto;
   }
 
-  /*Section 3 CSS*/
+  /*---------------------------*/
+  /*Below is the #section-3 CSS*/
+  /*---------------------------*/
   #section-3 .info-box {
     margin: 0 auto;
   }
@@ -1012,12 +1051,45 @@ body {
     text-align: center;
   }
 
+  /*---------------------------*/
+  /*Below is the #section-4 CSS*/
+  /*---------------------------*/
   #section-4 {
     background: #f9f9f9;
+    height: auto;
     border-bottom: none;
   }
 
-  /*Section 5 CSS*/
+  #section-4 h2 {
+    padding-top: 35px;
+    padding-bottom: 40px
+  }
+
+  #section-4 .container .row .highlight {
+    width: 100% !important;
+    margin-bottom: 0px;
+  }
+
+  #section-4 .container .row .highlight .title {
+    margin-bottom: 25px;
+  }
+
+  #section-4 .container .row .highlight .sub-title {
+    margin-bottom: 20px;
+  }
+
+  #section-4 .container .row .highlight .link {
+    margin-bottom: 40px;
+  }
+
+  #section-4 .container .row .highlight .link p {
+    font-size: 1.4rem;
+    line-height: 30px;
+  }
+
+  /*---------------------------*/
+  /*Below is the #section-5 CSS*/
+  /*---------------------------*/
   #section-5 {
     display: block;
     height: auto;
@@ -1052,7 +1124,16 @@ body {
     margin: 0 auto;
   }
 
-  /*Section 6 CSS*/
+  #section-5 .spec-box2 .box-content p {
+    color: white;
+    line-height: 28px;
+    max-width: 800px;
+    margin-bottom: 34px;
+  }
+
+  /*---------------------------*/
+  /*Below is the #section-6 CSS*/
+  /*---------------------------*/
   #section-6 .container .features {
     margin: 0 auto;
     width: 90%;
@@ -1075,8 +1156,16 @@ body {
     line-height: 28px;
   }
 
-  #section-7 .review-container .container .reviews {
+  /*---------------------------*/
+  /*Below is the #section-7 CSS*/
+  /*---------------------------*/
+  #section-7 .review-container .reviews {
     width: 90%;
+  }
+
+  #section-7 .review-container .reviews .reviewer p .job-title {
+    display: block;
+    margin-top: 8px;
   }
 }
 
@@ -1088,13 +1177,13 @@ body {
 
 /*Below is the CSS for Large devices (desktops 992px)*/
 @media (max-width: 992px) {
-  .site-navbar {
+  .nav-items {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
   }
 
-  #site-header .site-navbar .nav-items .nav-item {
+  #site-header .nav-items .nav-item {
     padding: 0 25px;
   }
 
@@ -1114,7 +1203,7 @@ body {
     width: 32%;
   }
 
-  #section-7 .review-container .container .reviews {
+  #section-7 .review-container.reviews {
     width: 65%;
   }
 }
@@ -1127,7 +1216,7 @@ body {
 
 /*Below is the CSS for Extra large devices (large desktops, 1200px)*/
 @media (max-width: 1200px) {
-  #section-7 .review-container .container .reviews {
+  #section-7 .review-container .reviews {
     width: 85%;
   }
 }
@@ -1137,21 +1226,23 @@ body {
     width: 1170px;
   }
 
-  #section-7 .review-container .container .reviews {
+  #section-7 .review-container .reviews {
     width: 56%;
   }
 }
 
+/*----------------------------*/
 /*Below is the mobile menu CSS*/
+/*----------------------------*/
 .mobile-menu {
-  display: none;
+  background: #2c3c44;
   position: absolute;
   flex-direction: column;
+  display: none;
   top: 50px;
   width: 100%;
   text-align: center;
   list-style: none;
-  background: #2c3c44;
   z-index: 10;
   transform: translate3d(0, -100%, 0);
   transition: all .4s ease-in-out;
@@ -1183,10 +1274,10 @@ body {
   box-shadow: 2px 0px 78px -15px rgba(0, 0, 0, 0.75);
 }
 
-.active {
-  display: flex;
-}
-
 .menu-btn {
   cursor: pointer;
+}
+
+.active {
+  display: flex;
 }
