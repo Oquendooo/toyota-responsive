@@ -26,7 +26,6 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -470,6 +469,7 @@ body {
 }
 
 #section-4 .container .row .highlight .link {
+  color: #539cda;
   text-align: center;
   display: inline-block;
   padding: 12px 10px;
@@ -651,6 +651,10 @@ body {
   -webkit-box-shadow: -2px 3px 5px -3px rgba(148, 136, 148, 1);
   -moz-box-shadow: -2px 3px 5px -3px rgba(148, 136, 148, 1);
   box-shadow: -2px 3px 5px -3px rgba(148, 136, 148, 1);
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  justify-content: space-between;
 }
 
 #section-7 .review-container .reviews .review .quote {
@@ -803,8 +807,6 @@ body {
   }
 }
 
-@media (min-width: 576px) {}
-
 @media (max-width: 630px) {
   #site-header .container {
     display: flex;
@@ -833,6 +835,14 @@ body {
   #section-2 .container .row .widget {
     width: 100%;
     margin-bottom: 15px;
+  }
+
+  #section-2 .container .row .widget .widget-bottom {
+    min-height: 0 !important;
+  }
+
+  #section-2 .container .row .widget .widget-bottom .model-description {
+    min-height: 36.5px !important;
   }
 
   #section-2 .model-table {
@@ -893,7 +903,7 @@ body {
   /*Below is the #section-3 CSS*/
   /*---------------------------*/
   #section-3 {
-    height: 385px;
+    height: 425px;
   }
 
   #section-3 .info-box {
@@ -939,6 +949,7 @@ body {
   /*---------------------------*/
   #section-7 {
     height: 898px;
+    height: 962px;
   }
 
   #section-7 .top {
@@ -959,7 +970,7 @@ body {
   #section-7 .review-container .mobile-title {
     display: block;
     text-align: center;
-    padding: 65px 0 20px;
+    padding: 65px 0 0px 0;
     font-size: 2.2rem;
     text-align: center;
     margin: 0 6% 0 6%;
@@ -979,7 +990,7 @@ body {
   }
 
   #section-7 .review-container .reviews .review {
-    padding: 28px 7.5%;
+    padding: 48px 7.5%;
     background: #f9f9f9;
     width: 100%;
     -webkit-box-shadow: none;
@@ -1030,8 +1041,12 @@ body {
     padding: 10px 28px;
   }
 
+  #section-2 .container .row .widget .widget-bottom {
+    min-height: 262px;
+  }
+
   #section-2 .container .row .widget .widget-bottom .model-description {
-    min-height: 119.5px !important;
+    min-height: 119.5px;
   }
 }
 
