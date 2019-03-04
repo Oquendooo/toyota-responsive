@@ -372,7 +372,7 @@ body {
   background-image: url("../images/Desktop_images/Learn_more_BG_desktop.jpg");
   background-position: center;
   background-size: cover;
-  height: 583px;
+  height: 564px;
 }
 
 #section-3 {
@@ -387,7 +387,7 @@ body {
 }
 
 #section-3 .info-box .info-box-content {
-  padding: 40px 25px 40px 36px;
+  padding: 60px 25px 60px 36px;
   margin: 0 auto;
   width: 85%;
 }
@@ -1292,6 +1292,10 @@ body {
 @media (max-width: 1200px) {
   #section-7 .review-container .reviews {
     width: 85%;
+  }
+
+  #section-3 {
+    height: 480px;
   }
 }
 
