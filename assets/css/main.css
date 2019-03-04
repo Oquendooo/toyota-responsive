@@ -166,17 +166,22 @@ body {
 }
 
 #site-header .nav-items .nav-item {
-  padding-left: 60px;
+  padding-left: 54px;
 }
 
 #site-header .nav-items .nav-item a {
+  padding: 12px 4px;
   color: var(--header-item-color, #fbfefe);
   text-decoration: none;
+  transition: all 0.1s ease-in-out 0s;
+}
+
+#site-header .nav-items .nav-item:last-child a {
+  padding-right: 0px;
 }
 
 #site-header .nav-items .nav-item a:hover {
-  color: var(--header-item-color, #fbfefe);
-  text-decoration: underline;
+  color: #e69529;
 }
 
 /*---------------------------*/
@@ -266,7 +271,7 @@ body {
 }
 
 #section-2 .container .row .widget .widget-top .model-link {
-  transition: background-color 60ms linear;
+  transition: background-color 55ms linear;
 }
 
 #section-2 .container .row .widget .widget-top .model-link:hover {
@@ -607,7 +612,7 @@ body {
 
 #section-7 .top h2 {
   padding: 65px 0;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -763,10 +768,12 @@ body {
 #site-footer .footer-item a {
   color: white;
   text-decoration: none;
+  transition: all 0.1s ease-in-out 0s;
 }
 
 #site-footer .footer-item a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #e69527;
 }
 
 #site-footer .footer-separator {
@@ -1036,6 +1043,12 @@ body {
   }
 }
 
+@media screen and (min-width:403px) and (max-width:629px) {
+  #section-7 {
+    height: 902px;
+  }
+}
+
 @media (max-width: 709px) {
   #section-2 .container .row .widget .widget-top .model-link .model-type {
     padding: 10px 28px;
@@ -1052,6 +1065,9 @@ body {
 
 /*Below is the CSS for medium size devices (tablets 768px)*/
 @media (max-width: 768px) {
+  #site-header .nav-items {
+    justify-content: center;
+  }
 
   /*---------------------------*/
   /*Below is the #section-1 CSS*/
@@ -1305,7 +1321,7 @@ body {
 .mobile-menu .li {}
 
 .mobile-menu.active .menu-link {
-  padding: 14px 40px;
+  padding: 0px 40px;
   font-size: 18px;
   font-weight: 600;
   border-bottom: 2.5px solid rgba(255, 255, 255, 0.1);
@@ -1313,12 +1329,18 @@ body {
 }
 
 .mobile-menu.active .menu-link a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 0px;
   text-decoration: none;
+  transition: all 0.05s ease-in-out 0s;
   color: white;
 }
 
 .mobile-menu.active .menu-link a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #e69527;
 }
 
 .mobile-menu.active {
