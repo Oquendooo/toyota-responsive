@@ -121,14 +121,14 @@ table {
   src: url(../fonts/roboto/roboto-regular.ttf);
 }
 
+body {
+  font-family: Roboto;
+}
+
 /*Below are CSS variables I've defined */
 :root {
   --header-height: 50px;
   --header-item-color: #fbfefe;
-}
-
-body {
-  font-family: Roboto;
 }
 
 /*-----------------------------*/
@@ -637,12 +637,8 @@ body {
   justify-content: space-around;
   position: absolute;
   top: 50%;
-  /* position the top  edge of the element at the middle of the parent */
   left: 50%;
-  /* position the left edge of the element at the middle of the parent */
   transform: translate(-50%, -50%);
-  /* This is a shorthand of
-                                       translateX(-50%) and translateY(-50%) */
 }
 
 #section-7 .review-container .reviews .review {
@@ -659,7 +655,6 @@ body {
   box-shadow: -2px 3px 5px -3px rgba(148, 136, 148, 1);
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
   justify-content: space-between;
 }
 
@@ -795,7 +790,7 @@ body {
 }
 
 /*---------------------------------------------------------------------*/
-/*Below is the CSS for all screen sizes that are not desktops and below*/
+/*Below is the CSS for all screen sizes that are not desktops*/
 /*---------------------------------------------------------------------*/
 @media (max-width: 483px) {
   #section-1 {
@@ -829,9 +824,6 @@ body {
     display: inline-block;
   }
 
-  /*---------------------------*/
-  /*Below is the #section-2 CSS*/
-  /*---------------------------*/
   #section-2 .container h2 {
     font-size: 2.1rem;
   }
@@ -911,9 +903,6 @@ body {
     font-weight: bold;
   }
 
-  /*---------------------------*/
-  /*Below is the #section-3 CSS*/
-  /*---------------------------*/
   #section-3 {
     height: 425px;
   }
@@ -930,9 +919,6 @@ body {
     width: 250px;
   }
 
-  /*---------------------------*/
-  /*Below is the #section-4 CSS*/
-  /*---------------------------*/
   #section-4 {
     height: unset;
   }
@@ -956,9 +942,6 @@ body {
     margin-bottom: 60px;
   }
 
-  /*---------------------------*/
-  /*Below is the #section-7 CSS*/
-  /*---------------------------*/
   #section-7 {
     height: 962px;
   }
@@ -1017,9 +1000,6 @@ body {
     display: none;
   }
 
-  /*---------------------------*/
-  /*Below is the #site-footer CSS*/
-  /*---------------------------*/
   #site-footer .footer-list {
     display: flex;
     flex-direction: column;
@@ -1073,9 +1053,6 @@ body {
     justify-content: center;
   }
 
-  /*---------------------------*/
-  /*Below is the #section-1 CSS*/
-  /*---------------------------*/
   #section-1 {
     display: block;
     background-image: none;
@@ -1106,9 +1083,6 @@ body {
     margin: 0 auto;
   }
 
-  /*---------------------------*/
-  /*Below is the #section-3 CSS*/
-  /*---------------------------*/
   #section-3 .info-box {
     margin: 0 auto;
   }
@@ -1117,9 +1091,6 @@ body {
     text-align: center;
   }
 
-  /*---------------------------*/
-  /*Below is the #section-4 CSS*/
-  /*---------------------------*/
   #section-4 {
     background: #f9f9f9;
     height: auto;
@@ -1153,9 +1124,6 @@ body {
     line-height: 30px;
   }
 
-  /*---------------------------*/
-  /*Below is the #section-5 CSS*/
-  /*---------------------------*/
   #section-5 {
     display: block;
     height: auto;
@@ -1205,9 +1173,6 @@ body {
     margin-bottom: 38px;
   }
 
-  /*---------------------------*/
-  /*Below is the #section-6 CSS*/
-  /*---------------------------*/
   #section-6 .container .features {
     margin: 0 auto;
     width: 90%;
@@ -1230,9 +1195,6 @@ body {
     line-height: 28px;
   }
 
-  /*---------------------------*/
-  /*Below is the #section-7 CSS*/
-  /*---------------------------*/
   #section-7 .review-container .reviews {
     width: 90%;
   }
