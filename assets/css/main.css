@@ -614,6 +614,7 @@ body {
   padding: 65px 0;
   font-size: 2.5rem;
   text-align: center;
+  font-weight: 800;
 }
 
 #section-7 .container {
@@ -831,6 +832,10 @@ body {
   /*---------------------------*/
   /*Below is the #section-2 CSS*/
   /*---------------------------*/
+  #section-2 .container h2 {
+    font-size: 2.1rem;
+  }
+
   #section-2 .container .row {
     flex-direction: column;
   }
@@ -1123,7 +1128,7 @@ body {
   }
 
   #section-4 h2 {
-    padding-top: 35px;
+    padding-top: 60px;
     padding-bottom: 40px
   }
 
