@@ -214,7 +214,7 @@ body {
   bottom: 55px;
   right: 0px;
   width: 225px;
-  height: 75px;
+  height: 79px;
 }
 
 #section-1 .container .mobile-logo {
@@ -230,7 +230,7 @@ body {
 
 #section-2 .container h2 {
   text-align: center;
-  padding: 50px 0;
+  padding: 60px 0 50px 0;
   letter-spacing: 3px;
   font-size: 2.5rem;
 }
@@ -288,7 +288,7 @@ body {
   text-align: center;
   color: white;
   width: 75px;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   width: 110px;
 }
 
@@ -496,7 +496,7 @@ body {
 /*Below is the #section-5 CSS*/
 /*---------------------------*/
 #section-5 {
-  height: 600px;
+  height: 650px;
   background-image: url("../images/Desktop_images/Safety_speed_BG_desktop.jpg");
   background-position: center;
   background-size: cover;
@@ -517,7 +517,7 @@ body {
 }
 
 #section-5 .spec-box1 .box-content h2 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   margin-bottom: 24px;
 }
 
@@ -540,7 +540,7 @@ body {
 
 #section-5 .spec-box2 .box-content h2 {
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   margin-bottom: 28px;
 }
 
@@ -565,7 +565,7 @@ body {
 
 #section-6 h2 {
   text-align: center;
-  padding: 65px 0;
+  padding: 60px 0;
   font-size: 2.5rem;
 }
 
@@ -960,7 +960,6 @@ body {
   /*Below is the #section-7 CSS*/
   /*---------------------------*/
   #section-7 {
-    height: 898px;
     height: 962px;
   }
 
@@ -982,7 +981,7 @@ body {
   #section-7 .review-container .mobile-title {
     display: block;
     text-align: center;
-    padding: 65px 0 0px 0;
+    padding: 65px 0 12px 0;
     font-size: 2.2rem;
     text-align: center;
     margin: 0 6% 0 6%;
